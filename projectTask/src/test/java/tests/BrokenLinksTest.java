@@ -23,8 +23,8 @@ public class BrokenLinksTest extends BaseTest {
     public void brokenLinksAndExportToFile() {
         url = config.getUrl();
         logger.info("brokenLinksAndExportToFile URL = "+url);
-        driver().get(url);
-        List<WebElement> allLinks = driver().findElements(By.tagName("a"));
+        driver.get(url);
+        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
         logger.info("Total count of links: " + allLinks.size());
 
         List<String> brokenLinks = CommonUtils.getBrokenLinks(allLinks);
