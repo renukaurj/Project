@@ -60,11 +60,11 @@ public class CommonUtils {
      */
     public static void writeBrokenLinksReport(String url, List<String> brokenLinks) {
 
-        BufferedWriter writer = null;
+        FileWriter writer = null;
 
         try {
 
-            writer = new BufferedWriter(new FileWriter("broken_links_report.txt"));
+            writer = new FileWriter("broken_links_report.txt");
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append("Broken Links Report for "+url+"\n");
             stringBuilder.append("====================\n");
