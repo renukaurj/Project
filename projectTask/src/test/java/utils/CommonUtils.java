@@ -63,7 +63,6 @@ public class CommonUtils {
         FileWriter writer = null;
 
         try {
-
             writer = new FileWriter("broken_links_report.txt");
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append("Broken Links Report for "+url+"\n");
@@ -71,7 +70,6 @@ public class CommonUtils {
             stringBuilder.append("Total broken links: " + brokenLinks.size() + "\n");
             stringBuilder.append("====================\n");
             stringBuilder.append("List of all broken links:  "+"\n\n");
-
 
             for (String link : brokenLinks) {
                 if (link != null && !link.trim().isEmpty()) {
