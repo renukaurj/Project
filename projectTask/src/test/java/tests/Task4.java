@@ -17,7 +17,7 @@ public class Task4 extends BaseTest {
     YAMLConfig config = new YAMLConfig();
     static String url;
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public void spinner() throws AWTException, InterruptedException, IOException, ParseException {
         SpinnerTaskPage4 spinnerTaskPage4 = new SpinnerTaskPage4(driver);
         url = config.getUrltask4s();
